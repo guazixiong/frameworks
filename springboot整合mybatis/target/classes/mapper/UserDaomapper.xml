@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pd.dao.UserDao">
+    <!--此处的namespace是绑定不同的Dao接口-->
+    <!--添加新用户-->
+    <insert id="register">
+        INSERT into user
+        (user_name,user_scores,user_subject)
+        VALUES
+        (#{user_name},#{user_scores},#{user_subject});
+    </insert>
+
+</mapper>
